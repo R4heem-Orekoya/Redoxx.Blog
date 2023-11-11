@@ -68,7 +68,7 @@ const App = () => {
       <Navbar handleCategory={handleCategory} currentCategory={currentCategory}/>
 
       <Routes>
-        <Route path='/' element={<Home posts={categorisedPosts.reverse()}/>}/>
+        <Route path='/' element={<Home posts={categorisedPosts}/>}/>
         <Route path='/blog/:id' element={<Blogpage posts={posts}/>}/>
       </Routes>
 
